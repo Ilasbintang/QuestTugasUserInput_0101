@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <color name="warna_latar">#F7F5FA</color>
+    <color name="ungu_utama">#7042C6</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="teks_utama">#26232B</color>
+    <color name="teks_sekunder">#88838D</color>
+    <color name="garis_input">#A7A3AE</color>
+    <color name="tombol_nonaktif">#E3E3E3</color>
 </resources>
