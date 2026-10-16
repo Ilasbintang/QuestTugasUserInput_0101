@@ -332,7 +332,12 @@ fun InputBiodata(
     }
 }
 
-
+@Composable
+fun KolomTanggal(
+    tanggal: String,
+    onTanggalDipilih: (String) -> Unit,
+    modifier: Modifier = Modifier
+)
 
 
 
