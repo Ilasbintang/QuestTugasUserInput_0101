@@ -263,7 +263,33 @@ fun KartuFormBiodata(modifier: Modifier = Modifier) {
             if (webDipilih) stringResource(R.string.skill_web) else null
         ).joinToString()
 
-        
+        AlertDialog(
+            onDismissRequest = { tampilkanHasil = false },
+            confirmButton = {
+                TextButton(onClick = { tampilkanHasil = false }) {
+                    Text(stringResource(R.string.pilih))
+                }
+            },
+            title = {
+                Text(stringResource(R.string.hasil_biodata))
+            },
+            text = {
+                Text(
+                    stringResource(
+                        R.string.format_hasil,
+                        namaDepan,
+                        namaBelakang,
+                        email,
+                        tanggalLahir,
+                        experience,
+                        daftarSkill
+                    )
+                )
+            },
+            containerColor = colorResource(R.color.putih)
+        )
+    }
+}
 
 
 
