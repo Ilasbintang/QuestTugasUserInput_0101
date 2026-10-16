@@ -389,7 +389,12 @@ fun KolomTanggal(
         }
     }
 }
-
+@Composable
+fun PilihanExperience(
+    experience: String,
+    onExperienceDipilih: (String) -> Unit,
+    modifier: Modifier = Modifier
+)
 
 
 
