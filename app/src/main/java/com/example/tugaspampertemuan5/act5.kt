@@ -365,7 +365,12 @@ fun KolomTanggal(
             }
             .padding(horizontal = 10.dp),
         contentAlignment = Alignment.CenterStart
-    )
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        )
 
 
 
