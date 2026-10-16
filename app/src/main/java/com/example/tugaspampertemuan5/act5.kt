@@ -433,4 +433,23 @@ fun PilihanExperience(
         DropdownMenu(
             expanded = menuTerbuka,
             onDismissRequest = { menuTerbuka = false }
-        )
+        ) {
+            listOf(
+                stringResource(R.string.experience_pemula),
+                stringResource(R.string.experience_menengah),
+                stringResource(R.string.experience_mahir)
+            ).forEach { pilihan ->
+                DropdownMenuItem(
+                    text = { Text(pilihan) },
+                    onClick = {
+                        onExperienceDipilih(pilihan)
+                        menuTerbuka = false
+                    }
+                )
+            }
+        }
+    }
+}
+
+
+}
