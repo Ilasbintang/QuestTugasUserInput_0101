@@ -430,3 +430,7 @@ fun PilihanExperience(
             )
         }
 
+        DropdownMenu(
+            expanded = menuTerbuka,
+            onDismissRequest = { menuTerbuka = false }
+        )
