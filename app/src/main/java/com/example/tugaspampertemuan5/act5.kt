@@ -412,6 +412,15 @@ fun PilihanExperience(
                 .padding(horizontal = 10.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
-        )
+        ) {
+            Text(
+                text = if (experience.isBlank()) {
+                    stringResource(R.string.experience)
+                } else {
+                    experience
+                },
+                color = colorResource(R.color.teks_utama),
+                fontSize = 10.sp
+            )
 
 
