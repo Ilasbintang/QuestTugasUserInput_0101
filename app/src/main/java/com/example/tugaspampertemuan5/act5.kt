@@ -397,6 +397,21 @@ fun PilihanExperience(
 ) {
     var menuTerbuka by remember { mutableStateOf(false) }
 
-
+    Box(modifier = modifier) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(38.dp)
+                .clip(RoundedCornerShape(12.dp))
+                .border(
+                    1.dp,
+                    colorResource(R.color.garis_input),
+                    RoundedCornerShape(12.dp)
+                )
+                .clickable { menuTerbuka = true }
+                .padding(horizontal = 10.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        )
 
 
