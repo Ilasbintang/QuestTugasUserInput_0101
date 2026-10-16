@@ -296,7 +296,19 @@ fun InputBiodata(
     onValueChange: (String) -> Unit,
     hint: String,
     modifier: Modifier = Modifier
-)
+) {
+    Row(
+        modifier = modifier
+            .height(38.dp)
+            .clip(RoundedCornerShape(12.dp))
+            .border(
+                width = 1.dp,
+                color = colorResource(R.color.garis_input),
+                shape = RoundedCornerShape(12.dp)
+            )
+            .padding(horizontal = 10.dp),
+        verticalAlignment = Alignment.CenterVertically
+    )
 
 
 
