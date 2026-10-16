@@ -318,6 +318,19 @@ fun InputBiodata(
                 )
             }
 
+            BasicTextField(
+                value = value,
+                onValueChange = onValueChange,
+                singleLine = true,
+                textStyle = androidx.compose.ui.text.TextStyle(
+                    color = colorResource(R.color.teks_utama),
+                    fontSize = 10.sp
+                ),
+                modifier = Modifier.fillMaxWidth()
+            )
+        }
+    }
+}
 
 
 
