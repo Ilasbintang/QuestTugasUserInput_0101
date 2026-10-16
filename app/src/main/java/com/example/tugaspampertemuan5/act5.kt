@@ -308,7 +308,16 @@ fun InputBiodata(
             )
             .padding(horizontal = 10.dp),
         verticalAlignment = Alignment.CenterVertically
-    )
+    ) {
+        Box(modifier = Modifier.fillMaxWidth()) {
+            if (value.isEmpty()) {
+                Text(
+                    text = hint,
+                    color = colorResource(R.color.teks_sekunder),
+                    fontSize = 10.sp
+                )
+            }
+
 
 
 
