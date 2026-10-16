@@ -370,7 +370,16 @@ fun KolomTanggal(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
-        )
+        ) {
+            Text(
+                text = if (tanggal.isBlank()) {
+                    stringResource(R.string.tanggal_lahir)
+                } else {
+                    tanggal
+                },
+                color = colorResource(R.color.teks_utama),
+                fontSize = 10.sp
+            )
 
 
 
