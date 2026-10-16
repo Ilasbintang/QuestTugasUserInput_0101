@@ -381,7 +381,14 @@ fun KolomTanggal(
                 fontSize = 10.sp
             )
 
-
+            Text(
+                text = "▦",
+                color = colorResource(R.color.teks_utama),
+                fontSize = 14.sp
+            )
+        }
+    }
+}
 
 
 
