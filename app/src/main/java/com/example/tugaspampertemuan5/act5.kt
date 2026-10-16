@@ -341,6 +341,31 @@ fun KolomTanggal(
     val context = LocalContext.current
     val kalender = Calendar.getInstance()
 
+    Box(
+        modifier = modifier
+            .height(38.dp)
+            .clip(RoundedCornerShape(12.dp))
+            .border(
+                1.dp,
+                colorResource(R.color.garis_input),
+                RoundedCornerShape(12.dp)
+            )
+            .clickable {
+                DatePickerDialog(
+                    context,
+                    { _, tahun, bulan, hari ->
+                        onTanggalDipilih(
+                            "$hari/${bulan + 1}/$tahun"
+                        )
+                    },
+                    kalender.get(Calendar.YEAR),
+                    kalender.get(Calendar.MONTH),
+                    kalender.get(Calendar.DAY_OF_MONTH)
+                ).show()
+            }
+            .padding(horizontal = 10.dp),
+        contentAlignment = Alignment.CenterStart
+    )
 
 
 
