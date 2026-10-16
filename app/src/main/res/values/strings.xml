@@ -1,3 +1,25 @@
 <resources>
-
+    <string name="app_name">Tugas5</string>
+    <string name="judul_form">Form Biodata</string>
+    <string name="petunjuk_form">Silahkan isi biodata Anda dibawah ini !!!</string>
+    <string name="nama_depan">Nama Depan</string>
+    <string name="nama_belakang">Nama Belakang</string>
+    <string name="email">Email</string>
+    <string name="tanggal_lahir">Tgl. Lahir</string>
+    <string name="experience">Experience</string>
+    <string name="pilih_skill">Pilih Skill Anda :</string>
+    <string name="skill_android">Android</string>
+    <string name="skill_uiux">UI/UX</string>
+    <string name="skill_web">Web</string>
+    <string name="proceed">Proceed</string>
+    <string name="pilih_tanggal">Pilih tanggal lahir</string>
+    <string name="batal">Batal</string>
+    <string name="pilih">Pilih</string>
+    <string name="pilih_experience">Pilih Experience</string>
+    <string name="experience_pemula">Pemula</string>
+    <string name="experience_menengah">Menengah</string>
+    <string name="experience_mahir">Mahir</string>
+    <string name="hasil_biodata">Biodata Anda</string>
+    <string name="format_hasil">Nama: %1$s %2$s\nEmail: %3$s\nTanggal lahir: %4$s\nExperience: %5$s\nSkill: %6$s</string>
+    <string name="pesan_kosong">Mohon lengkapi seluruh biodata dan pilih minimal satu skill.</string>
 </resources>

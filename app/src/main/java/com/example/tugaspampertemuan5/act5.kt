@@ -1,5 +1,6 @@
 package com.example.tugaspampertemuan5
 
+
 import android.app.DatePickerDialog
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -61,7 +62,7 @@ fun TampilanACT5() {
                     .padding(innerPadding)
             ){
                 Image(
-                    painter = painterResource(R.drawable.baru),
+                    painter = painterResource(R.drawable.header_spider),
                     contentDescription = null,
                     modifier = Modifier
                         .fillMaxWidth()
