@@ -290,6 +290,13 @@ fun KartuFormBiodata(modifier: Modifier = Modifier) {
         )
     }
 }
+@Composable
+fun InputBiodata(
+    value: String,
+    onValueChange: (String) -> Unit,
+    hint: String,
+    modifier: Modifier = Modifier
+)
 
 
 
