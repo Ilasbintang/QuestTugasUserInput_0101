@@ -423,4 +423,10 @@ fun PilihanExperience(
                 fontSize = 10.sp
             )
 
+            Text(
+                text = "▾",
+                color = colorResource(R.color.teks_utama),
+                fontSize = 12.sp
+            )
+        }
 
