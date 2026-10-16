@@ -451,5 +451,10 @@ fun PilihanExperience(
     }
 }
 
-
+@Composable
+fun PilihanSkill(
+    teks: String,
+    dipilih: Boolean,
+    saatDipilih: (Boolean) -> Unit
+)
 }
